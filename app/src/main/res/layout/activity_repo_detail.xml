@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        android:theme="@style/ToolbarColoredBackArrow"
+        android:background="@drawable/ic_background_main_activity_title"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView_star"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_star_unfilled"
+        ></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:gravity="center_vertical
+"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="75dp">
+            <ImageView
+                android:id="@+id/imageView_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Test Owner"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/cardView_imageView"
+            ></TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/relativeLayout_1"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background">
+
+        <TextView
+            android:id="@+id/textView_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="20dp"
+
+            android:gravity="center"
+            android:text="Stars :"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/textView_stars_content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="20dp"
+
+            android:layout_toRightOf="@id/textView_stars"
+            android:gravity="center"
+            android:text="178"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            ></TextView>
+
+
+        <TextView
+            android:id="@+id/textView_open_issues"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/textView_stars"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Open Issues :"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/textView_open_issues_content"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/textView_stars_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textView_open_issues"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            ></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
